@@ -15,6 +15,8 @@ async function checkWeather(city) {
   
       const response = await fetch(`${apiUrl}${city}&appid=${apiKey}`);
       const data = await response.json();
+
+     
   
       if (data && data.main) {
         const temp = data.main.temp;
@@ -48,6 +50,8 @@ async function checkWeather(city) {
     } catch (error) {
       console.error('Error fetching weather data:', error);
     }
+document.querySelector(".weather").style.display = "block";
+
   }
 
 searchBtn.addEventListener("click", () => {
