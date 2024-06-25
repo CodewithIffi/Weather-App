@@ -24,7 +24,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .search input {
@@ -57,7 +56,6 @@ body {
 .weather-icon {
     width: 170px;
     margin-top: 30px;
-
 }
 
 .weather h1 {
@@ -69,7 +67,6 @@ body {
     font-size: 45px;
     font-weight: 400;
     margin-top: -10px;
-
 }
 
 .details {
@@ -78,7 +75,6 @@ body {
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 50px;
-
 }
 
 .col {
@@ -101,10 +97,89 @@ body {
 .weather {
     display: none;
 }
-.error{
+
+.error {
     text-align: left;
     margin-left: 10px;
     font-size: 14px;
     margin-top: 10px;
     display: none;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 768px) {
+    .card {
+        margin: 50px auto 0;
+        padding: 20px 15px;
+    }
+    .search input {
+        padding: 8px 15px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .search button {
+        width: 40px;
+        height: 40px;
+    }
+    .weather-icon {
+        width: 120px;
+        margin-top: 20px;
+    }
+    .weather h1 {
+        font-size: 60px;
+    }
+    .weather h2 {
+        font-size: 30px;
+    }
+    .details {
+        padding: 0 10px;
+        margin-top: 30px;
+    }
+    .col img {
+        width: 30px;
+        margin-right: 8px;
+    }
+    .humidity,
+    .wind {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        margin: 20px auto 0;
+        padding: 15px 10px;
+    }
+    .search input {
+        padding: 6px 10px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .search button {
+        width: 30px;
+        height: 30px;
+    }
+    .weather-icon {
+        width: 90px;
+        margin-top: 15px;
+    }
+    .weather h1 {
+        font-size: 40px;
+    }
+    .weather h2 {
+        font-size: 20px;
+    }
+    .details {
+        padding: 0 5px;
+        margin-top: 20px;
+    }
+    .col img {
+        width: 20px;
+        margin-right: 5px;
+    }
+    .humidity,
+    .wind {
+        font-size: 16px;
+    }
 }
